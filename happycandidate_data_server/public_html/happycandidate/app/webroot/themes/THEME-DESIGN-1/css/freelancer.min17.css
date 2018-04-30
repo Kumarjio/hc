@@ -1,0 +1,410 @@
+/*!
+ * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */body{font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;overflow-x:hidden; font-size:16px;}p{font-size:20px}p.small{font-size:16px}a,a.active,a:active,a:focus,a:hover{color:#18BC9C;outline:0}h1,h2,h3,h4,h5,h6{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700}hr.star-light,hr.star-primary{padding:0;border:none;border-top:solid 5px;text-align:center;max-width:250px;margin:25px auto 30px}hr.star-light:after,hr.star-primary:after{content:"\f005";font-family:FontAwesome;display:inline-block;position:relative;top:-.8em;font-size:2em;padding:0 .25em}.navbar-custom,header .intro-text .name{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase}hr.star-light{border-color:#fff}hr.star-light:after{background-color:#18BC9C;color:#fff}hr.star-primary{border-color:#2C3E50}hr.star-primary:after{background-color:#fff;color:#2C3E50}.navbar-custom .navbar-brand,.navbar-custom .navbar-brand.active,.navbar-custom .navbar-brand:active,.navbar-custom .navbar-brand:focus,.navbar-custom .navbar-brand:hover,.navbar-custom .navbar-nav li a,header{color:#000}.img-centered{margin:0 auto}
+ 
+ header{text-align:center; background: #feb236 url("../img/header-bg.png") repeat scroll 0 0;
+    text-align: center;}
+	header .container{padding-top:100px;padding-bottom:50px}header img{display:block;margin:0 auto 20px}header .intro-text .name{display:block;font-weight:700; color: #fff;
+    font-size: 40px !important;
+    text-shadow: 1px 1px #da8700;}header .intro-text .skills{color: #fff;
+    font-size: 18px !important;}
+.navbar-custom .navbar-brand span{ color: #000;
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 10px;
+}
+.intro-text form{
+     margin: 10px auto 0;
+    position: relative;
+    top: 12px;
+    width: 440px;
+	}
+.form-inner{
+	background:#fff;
+	padding: 20px;
+	}
+.form-bottom{
+	background:url(../img/form-bottom.png) no-repeat;
+	height:55px;
+ 	}	
+.intro-text form input{
+	background: #000 none repeat scroll 0 0;
+    border-radius: 0;
+    color: #fff;
+    font-size: 16px;
+    height: auto;
+    margin: 0 0 20px;
+    padding: 14px;
+	}
+.intro-text .btn-success {
+     width: 100%;
+}
+.intro-text .social-login{
+	 border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    margin: 30px 0 0;
+    padding: 12px 0;
+	}
+.intro-text .social-login img {
+   float: left;
+    margin: 10px 2px;
+}
+.clear{
+	clear:both;
+	}
+#header-below-info{
+	background:#000;
+	color:#fff;
+	text-align:center;
+	padding:30px 0;
+	font-size: 18px;
+	}
+#header-below-info h1{
+	margin:0px 0 20px 0;
+	}
+
+#features {
+	padding:60px 0;
+	}	
+#features .col-sm-4{
+	background: #ededed none repeat scroll 0 0;
+    margin: 0 30px 30px 27px;
+    padding: 15px 15px 25px 80px;
+    width: 29%;
+	}
+#features .col-sm-4:last-child{
+    margin: 0 0 0 27px;
+ }	
+#features  h3{
+	font-size:18px;
+	font-weight:normal;
+	}
+ #features img{
+	 background: #000 none repeat scroll 0 0;
+    border: 4px solid #fff;
+    border-radius: 100px;
+    float: left;
+    left: -30px;
+    padding: 22px;
+    position: absolute;}
+ #features img:hover{
+	  background:#FEB236;
+	   transition: all 0.3s ease 0s;
+	   }
+	   
+
+#welcome-area {
+	background:url(../img/welcome-bg.jpg) no-repeat #000;
+	padding:0;
+	color:#fff;
+	}	
+#welcome-area .col-sm-6{
+ 	 
+  }	
+ #welcome-area .info{
+	  line-height: 30px;
+    padding: 60px 0 0 40px;
+	} 
+#welcome-area  h1{
+ 	 
+	}
+ #welcome-area .register-btn{
+	  background: #feb236 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    padding: 7px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 139px;
+	margin-top:10px;
+	} 	
+#welcome-area img{
+	float: left;
+    left: -130px;
+    position: relative;
+	 }
+ 
+#testimonials{
+	background: #ededed none repeat scroll 0 0;} 
+#testimonials .active{
+	border-radius: 100px;
+	}  
+#testimonials .row{
+	padding:0 10%;
+	}
+	
+	
+.footer-col {
+	line-height:18px;
+	}	 	   
+.footer-col .navbar-brand	{
+	color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+	text-align: center;
+	float:none;
+	display:block;
+	}
+.footer-col .navbar-brand	span{
+	 display: block;
+    font-size: 22px;
+    margin-top: 10px;
+	}    
+ .list-inline > li {
+    display: block;
+    padding: 7px;
+}
+ .list-inline > li a{
+    color:#fff;
+}
+
+.footer-col  .btn-success {
+	    border-radius: 3px;
+    margin-top: 10px;
+    padding: 6px 0;
+    width: 100%;
+	 }
+
+/*Blue-theme*/
+.blue-theme .navbar-custom {
+   background: #2f4f88 none repeat scroll 0 0;
+    box-shadow: 0 4px 1px #385c9e;
+}
+.blue-theme .navbar-custom .navbar-brand {
+    color: #fff;}
+.blue-theme  .navbar-custom .navbar-brand span {
+    color: #fff;
+ }
+.blue-theme .navbar-default .navbar-nav > li > a {
+    color: #fff !important;
+}
+
+.blue-theme  header {
+    background: #3b62a7 url("../img/header-bg.png") repeat scroll 0 0;
+    text-align: center;
+}
+
+.blue-theme  header .intro-text .name {
+     text-shadow: 0 0;
+}
+
+.blue-theme  .intro-text form input {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #f7f7f7;
+     color: #000;
+ }
+
+.blue-theme  .intro-text .btn-success {
+    background: #6cbc35 none repeat scroll 0 0;
+    border: 1px solid #6cbc35;
+ }
+
+.blue-theme #header-below-info {
+    background: #6cbc35 none repeat ;
+}
+
+.blue-theme #features img {
+    background: #3c62a9; 
+}
+
+.blue-theme #features img:hover {
+    background: #6CBC35; 
+}
+ 
+.blue-theme  #welcome-area .register-btn {
+    background: #6cbc35 ;
+}
+.blue-theme  footer .footer-above {
+    background-color: #3c62a9;
+ }
+.blue-theme  .footer-col .btn-success {
+    background: #6cbc35 none repeat scroll 0 0;
+    border: 1px solid #6cbc35;
+ }
+ 
+
+/*Red-theme*/
+.red-theme .navbar-custom {
+    background: #FFFFFF;
+	box-shadow: 0 3px 2px #ed380c;
+}
+.red-theme .navbar-custom .navbar-brand {
+    color: #FD4914;}
+.red-theme  .navbar-custom .navbar-brand span {
+    color: #000;
+ }
+.red-theme .navbar-default .navbar-nav > li > a {
+    color: #000 !important;
+}
+
+.red-theme  header {
+    background: #FF4919 url("../img/header-bg.png") repeat scroll 0 0;
+    text-align: center;
+}
+
+.red-theme  header .intro-text .name {
+     text-shadow: 0 0;
+}
+
+.red-theme  .intro-text form input {
+    background: #EAEAEA;
+    border: 0;
+     color: #000;
+ }
+
+.red-theme  .intro-text .btn-success {
+    background: #FF4919;
+    border: 1px solid #FF4919;
+ }
+
+.red-theme #header-below-info {
+    background: #142C50 ;
+}
+
+.red-theme #features img {
+    background: #142C50; 
+}
+
+.red-theme #features img:hover {
+    background: #FA4818; 
+}
+ 
+.red-theme  #welcome-area .register-btn {
+    background: #FA4818;
+}
+.red-theme  footer .footer-above {
+    background-color: #142C50;
+ }
+.red-theme  .footer-col .btn-success {
+    background: #FA4818;
+    border: 1px solid #FA4818;
+ } 
+ 
+ 
+ /*Purpel-theme*/
+.purpel-theme .navbar-custom {
+     background: #f7f9f8 none repeat scroll 0 0;
+    box-shadow: 0 2px 2px #d2d7d5;
+}
+.purpel-theme .navbar-custom .navbar-brand {
+    color: #201E1F;}
+.purpel-theme  .navbar-custom .navbar-brand span {
+    color: #201E1F;
+ }
+.purpel-theme .navbar-default .navbar-nav > li > a {
+    color: #201E1F !important;
+}
+
+.purpel-theme  header {
+    background: #F7F9F8 url("../img/header-bg.png") repeat scroll 0 0;
+    text-align: center;
+}
+.purpel-theme header .intro-text .name {
+    color: #000;
+}
+.purpel-theme header .intro-text .skills {
+    color: #000;
+}
+.purpel-theme  header .intro-text .name {
+     text-shadow: 0 0;
+}
+
+.purpel-theme  .intro-text form input {
+    background: #fff;
+    border: 2px solid #F7F7F7;
+     color: #000;
+ }
+
+.purpel-theme  .intro-text .btn-success {
+    background: #9594DA;
+    border: 1px solid #9594DA;
+ }
+
+.purpel-theme #header-below-info {
+    background: #656AAE ;
+}
+
+.purpel-theme #features img {
+    background: #201E1F; 
+}
+
+.purpel-theme #features img:hover {
+    background: #656AAE; 
+}
+ 
+.purpel-theme  #welcome-area .register-btn {
+    background: #656AAE;
+}
+.purpel-theme  footer .footer-above {
+    background-color: #656AAE;
+ }
+.purpel-theme  .footer-col .btn-success {
+    background: #9B9DD6;
+    border: 1px solid #9B9DD6;
+ } 
+	 
+ @media (min-width:768px){header .container{padding-top:200px;padding-bottom: 0px}header .intro-text .name{font-size:4.75em}header .intro-text .skills{font-size:1.75em}}.navbar-custom{background: #fff;font-weight:700;border:none}.navbar-custom a:focus{outline:0}.navbar-custom .navbar-nav{letter-spacing:1px}.navbar-custom .navbar-nav li a:hover{color:#feb236;outline:0}.navbar-custom .navbar-nav li a:active,.navbar-custom .navbar-nav li a:focus{color:#fff}.navbar-custom .navbar-nav li.active a,.navbar-custom .navbar-nav li.active a:active,.navbar-custom .navbar-nav li.active a:focus,.navbar-custom .navbar-nav li.active a:hover{color:#fff;background:#18BC9C}.navbar-custom .navbar-toggle{background: #fbb035 none repeat scroll 0 0;
+    border-color: #fbb035;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;}.navbar-custom .navbar-toggle:focus,.navbar-custom .navbar-toggle:hover{background-color:#fbb035;color:#fff; }@media (min-width:768px){.navbar-custom{padding:25px 0 20px;-webkit-transition:padding .3s;-moz-transition:padding .3s;transition:padding .3s}.navbar-custom .navbar-brand{color: #feb236; text-align:center;
+    font-size: 35px ;
+    transition: all 0.3s ease 0s;}.navbar-custom.affix{padding:10px 0}.navbar-custom.affix .navbar-brand{font-size:1.5em}}section{padding:100px 0}section h2{margin:0;font-size:3em}section.success{background:#18BC9C;color:#fff}
+	
+@media (max-width:767px){section{padding:75px 0}section.first{padding-top:75px} #portfolio .portfolio-item{margin:0 0 15px;right:0}#portfolio .portfolio-item .portfolio-link{display:block;position:relative;max-width:400px;margin:0 auto}#portfolio .portfolio-item .portfolio-link .caption{background:rgba(24,188,156,.9);position:absolute;width:100%;height:100%;opacity:0;transition:all ease .5s;-webkit-transition:all ease .5s;-moz-transition:all ease .5s}#portfolio .portfolio-item .portfolio-link .caption:hover{opacity:1}#portfolio .portfolio-item .portfolio-link .caption .caption-content{position:absolute;width:100%;height:20px;font-size:20px;text-align:center;top:50%;margin-top:-12px;color:#fff}.btn-social,.scroll-top,.scroll-top .btn{width:50px;height:50px}#portfolio .portfolio-item .portfolio-link .caption .caption-content i{margin-top:-12px}#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,#portfolio .portfolio-item .portfolio-link .caption .caption-content h4{margin:0}#portfolio *{z-index:2}
+
+#features .col-sm-4 {
+     width: 90%;
+	 margin:0 auto 10px;
+}
+#features .col-sm-4:last-child {
+	 margin:0 auto 10px;
+}
+#welcome-area img {
+    float: none;
+    left: auto;
+     max-width: 100%;
+}
+ 
+#welcome-area .info {
+    line-height: 30px;
+    padding: 20px;
+}
+footer .footer-col {
+    border-bottom: 1px solid #535353;
+    margin: 10px auto;
+    padding: 10px;
+    width: 60%;
+}
+}
+@media (max-width:479px){
+	.intro-text form {
+    margin: 10px auto 0;
+    position: relative;
+    top: 12px;
+    width: auto;
+}
+.intro-text .social-login img {
+    float: none;
+    margin: 10px auto;
+}
+#features {
+    padding: 20px;
+}
+ footer .footer-col {
+    border-bottom: 1px solid #535353;
+    margin: 10px auto;
+    padding: 10px;
+    width: auto;
+}}
+
+@media (min-width:767px){#portfolio .portfolio-item{margin:0 0 30px}}.floating-label-form-group{position:relative;margin-bottom:0;padding-bottom:.5em;border-bottom:1px solid #eee}.floating-label-form-group input,.floating-label-form-group textarea{z-index:1;position:relative;padding-right:0;padding-left:0;border:none;border-radius:0;font-size:1.5em;background:0 0;box-shadow:none!important;resize:none}.floating-label-form-group label{display:block;z-index:0;position:relative;top:2em;margin:0;font-size:.85em;line-height:1.764705882em;vertical-align:middle;vertical-align:baseline;opacity:0;-webkit-transition:top .3s ease,opacity .3s ease;-moz-transition:top .3s ease,opacity .3s ease;-ms-transition:top .3s ease,opacity .3s ease;transition:top .3s ease,opacity .3s ease}.floating-label-form-group:not(:first-child){padding-left:14px;border-left:1px solid #eee}.floating-label-form-group-with-value label{top:0;opacity:1}.floating-label-form-group-with-focus label{color:#18BC9C}form .row:first-child .floating-label-form-group{border-top:1px solid #eee}footer{color:#fff}footer h3{font-size: 18px;
+    font-weight: normal;
+    margin: 10px 0 20px;}footer .footer-above{background-color: #000;
+    padding-top: 30px;}footer .footer-col{margin-bottom:50px}footer .footer-below{padding:25px 0;background-color:#233140}.btn-outline{color:#fff;font-size:20px;border:2px solid #fff;background:0 0;transition:all .3s ease-in-out;margin-top:15px}.btn-outline.active,.btn-outline:active,.btn-outline:focus,.btn-outline:hover{color:#18BC9C;background:#fff;border:2px solid #fff}.btn-primary.active,.btn-primary:active,.btn-success.active,.btn-success:active,.open .dropdown-toggle.btn-primary,.open .dropdown-toggle.btn-success{background-image:none}.btn-primary{color:#fff;background-color:#2C3E50;border-color:#2C3E50;font-weight:700}.btn-primary.active,.btn-primary:active,.btn-primary:focus,.btn-primary:hover,.open .dropdown-toggle.btn-primary{color:#fff;background-color:#1a242f;border-color:#161f29}.btn-primary.disabled,.btn-primary.disabled.active,.btn-primary.disabled:active,.btn-primary.disabled:focus,.btn-primary.disabled:hover,.btn-primary[disabled],.btn-primary[disabled].active,.btn-primary[disabled]:active,.btn-primary[disabled]:focus,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary,fieldset[disabled] .btn-primary.active,fieldset[disabled] .btn-primary:active,fieldset[disabled] .btn-primary:focus,fieldset[disabled] .btn-primary:hover{background-color:#2C3E50;border-color:#2C3E50}.btn-primary .badge{color:#2C3E50;background-color:#fff}.btn-success{color:#fff;background-color:#FEB236;border-color:#FEB236;font-weight:700}.btn-success.active,.btn-success:active,.btn-success:focus,.btn-success:hover,.open .dropdown-toggle.btn-success{color:#fff;background-color:#128f76;border-color:#11866f}.btn-success.disabled,.btn-success.disabled.active,.btn-success.disabled:active,.btn-success.disabled:focus,.btn-success.disabled:hover,.btn-success[disabled],.btn-success[disabled].active,.btn-success[disabled]:active,.btn-success[disabled]:focus,.btn-success[disabled]:hover,fieldset[disabled] .btn-success,fieldset[disabled] .btn-success.active,fieldset[disabled] .btn-success:active,fieldset[disabled] .btn-success:focus,fieldset[disabled] .btn-success:hover{background-color:#18BC9C;border-color:#18BC9C}.btn-success .badge{color:#18BC9C;background-color:#fff}.btn-social{display:inline-block;border:2px solid #fff;border-radius:100%;text-align:center;font-size:20px;line-height:45px}.btn.active,.btn:active,.btn:focus{outline:0}.scroll-top{position:fixed;right:2%;bottom:2%;z-index:1049}.scroll-top .btn{font-size:20px;border-radius:100%;line-height:28px}.scroll-top .btn:focus{outline:0}.portfolio-modal .modal-content{border-radius:0;background-clip:border-box;-webkit-box-shadow:none;box-shadow:none;border:none;min-height:100%;padding:100px 0;text-align:center}.portfolio-modal .modal-content h2{margin:0;font-size:3em}.portfolio-modal .modal-content img{margin-bottom:30px}.portfolio-modal .modal-content .item-details{margin:30px 0}.portfolio-modal .close-modal{position:absolute;width:75px;height:75px;background-color:transparent;top:25px;right:25px;cursor:pointer}.portfolio-modal .close-modal:hover{opacity:.3}.portfolio-modal .close-modal .lr{height:75px;width:1px;margin-left:35px;background-color:#2C3E50;transform:rotate(45deg);-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);z-index:1051}.portfolio-modal .close-modal .lr .rl{height:75px;width:1px;background-color:#2C3E50;transform:rotate(90deg);-ms-transform:rotate(90deg);-webkit-transform:rotate(90deg);z-index:1052}.portfolio-modal .modal-backdrop{opacity:0;display:none}

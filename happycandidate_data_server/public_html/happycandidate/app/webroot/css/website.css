@@ -1,0 +1,151 @@
+.vendor-statistic-container {
+   float: left;
+    margin-right: 10px;
+ 
+}
+/* .admin-content th:nth-child(n+2), .admin-content td:nth-child(n+2){
+width:28% !important;
+} */
+
+.tabloader
+{
+	background:url('../img/tabloader.gif') no-repeat;
+	height:120px;
+	max-width:120px;
+	margin-top: 50px;
+	margin-left: 20%;
+}
+.tab-row-container th:first-child, .tab-row-container th:first-child{
+padding:12.1px!important;
+}
+
+.cms-bgloader-mask{
+			position:fixed;
+			left:0;
+			top:0;
+			width:100%;
+			height:100%;
+			background-color:#292D30;
+			opacity:0.4;
+			display:none;
+			z-index:100000;
+}
+.cms-bgloader { 	
+				background:url(../img/bg-loader.gif) no-repeat 10px 10px; 
+				margin:-22px -22px; 
+				top:50%; 
+				left:50%; 
+				z-index:100000;
+				position:fixed;
+				width:64px;
+				height:64px;
+				display:none;
+				border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+}
+.portallogin .h-separator-v2 span{
+	background-color:#FFF!important;
+	
+}
+.wizard-step-centerside-65 a, .wizard-step-centerside-80 a {
+	color: #888888;
+    font-family: OpenSansRegular,Georgia,serif !important;
+    font-size: 15px !important;
+    font-weight: normal;
+    padding-left: 0;
+    padding-top: 18px;
+}
+.phase-header-container a{
+	color:#333;
+}
+.candidateimage  img{
+	margin-right:15px;
+}
+.candidateimage .input-append  .btn{
+	margin-top:15px;
+}
+.resources-v2 .resources-header h3{
+	font-size:16px!important;
+}
+/*
+.admin-sidebar-wrapper{
+	width:230px!important;
+}
+.admin-wrapper{padding-left:240px!important;}*/
+
+table.tablesorter {
+ /*font-family:arial;
+ background-color: #CDCDCD;
+ margin:10px 0pt 15px;
+ font-size: 8pt;
+ width: 100%;
+ text-align: left;*/
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+ padding-left:15px;
+ /*background-color: #e6EEEE;
+ border: 1px solid #FFF;
+ font-size: 8pt;
+ padding: 4px;*/
+}
+table.tablesorter thead tr .header {
+ background-image: url('http://www.rothrsolutions.com/happycandidate/img/bg.gif');
+ background-repeat: no-repeat;
+ background-position: center right;
+ cursor: pointer;
+ /*padding-left:16px;*/
+}
+table.tablesorter tbody td {
+ padding-left:15px;
+ /*color: #3D3D3D;
+ padding: 4px;
+ background-color: #FFF;
+ vertical-align: top;*/
+}
+table.tablesorter tbody tr.odd td {
+ /*background-color:#F0F0F6;*/
+}
+table.tablesorter thead tr .headerSortUp {
+ background-image: url('http://www.rothrsolutions.com/happycandidate/img/asc.gif');
+}
+table.tablesorter thead tr .headerSortDown {
+ background-image: url('http://www.rothrsolutions.com/happycandidate/img/desc.gif');
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+/*background-color: #8dbdd8;*/
+}
+.tablesorter .header {
+ float:none;
+ width:auto;
+}
+.resource-block{
+	margin-right:0.32%!important;
+}
+.v2-fix p {
+    color: #333;
+    font-size: 16px;
+    line-height: 180%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.meter-value-before{
+	width:13%!important;
+}
+.wizard-step-content-container{
+	text-align:justify!important;
+}
+.stepbutton{
+	    font-family: OpenSansRegular,Georgia,serif !important;
+    font-size: 15px;
+    height: 45px;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    min-height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}

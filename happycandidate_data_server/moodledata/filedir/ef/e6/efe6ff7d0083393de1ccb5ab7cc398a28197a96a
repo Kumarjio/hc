@@ -1,0 +1,79 @@
+Hello,
+
+Going through the document i have the following understanding of the system, so would like to share and confirm it as well
+
+
+Happy candidates is a carreer growth website platform from the owner of the site for jobseekers or candidates along with service providers
+Vendors
+
+There are 3 users here; -
+1) Site Owner(Super Admin)
+2) Service provider (Employer)
+3) Jobseeker Candidate
+
+e.g and individual or a group of site owner XYZ have n no of Employers / Service Providers and having n no of candidates / job seekers?
+
+Have listed few of the features for each user there might be more
+
+1) Site Owner is responsible for; -
+   a) create and manage carreer portal for service provider?
+   b) Create and manage service provider(Employer) account?
+   c) create and manage categories for traning material
+   d) Order management as service provider account is ordered to super admin
+   e) Overall access to system data and features like candidates, service providers, statistics
+
+2) Service providers; -
+   a) create and manage carreer portal
+   b) create and manage training courses, webinars, podcast, screencast, quiz, exam, certificates for job seeker
+   c) manage orders from job seekers
+   d) create and manage subscription pacakages for the training materials
+   e) create and manage their profile information
+   
+
+3) Job seekers; -
+   a) create and manage their profile information
+   b) Subscribe to the traning or carreer growth programs
+   c) Search jobs and save the searches
+   d) register for the carrer portal for a particular service provider
+   e) create and maintain their professional profile
+   f) apply for job offers
+
+
+
+Happy candidates generates the profit for the site owner and service providers interms of currency and
+for jobseeker in terms of carreer growth.
+
+
+Please confirm the above concept and my understanding on happy candidate
+
+
+Below are the questions or doubts that i have for now as per current understanding; -
+
+1) Can you please confirm the definition for happy candidates and the users of the system?
+2) Are carreer portals the portal for service providers?
+3) Why does super admin create carreer portal for service providers? why cant service providers themselves create
+   carreer portals?
+4) Does every carreer portal have its own login and registration for job seeker? 
+   i.e there will be a different job seeker account in happy candidates and carreer portal of a service provider?
+5) How is the revenue shared or profit made?
+   i.e. A service provider buys an account from the website owner than all the account price for the service provider
+   is credited directly to website owner?
+  
+   If a candidate buys any carreer  program or study material the purchased amount is shared between Service provider
+   and the site owner as per the set commission?
+6) A job seeker or candidate on completion of any training program can apply for job to service provider or even without follwoing the training program?
+7) can candidate might be registered with more than 1 service provider in their career portals?
+8) Candidates my path describes the preparation or the training progress for a particular service provider? right?
+9) candidate can subscribe for different training programs belonging to different service providers?
+10) Is there order managment for service providers? are there any subscription pacakages for service providers?
+    Is there any notification system if pacakage is close to expiry?
+11) Learning management system is for Service providers and job seekers where the service providers add courses, its fees, duration, study material, quiz, exam and certificate
+    and job seeker enroll to courses, and study materials, appear for quiz and exam and get certificates right?
+12) Does a particular job seeker has to register with service provider in its carreer portal?
+13) Each service provider registration form on carreer portal might differ?
+14) Service provider might have feature to build the registration form?
+15) Each service provider might have its own key factors to judge the candidates capability? i.e the factors like exp, skills, etc might vary for each 
+    Service provider?
+16) Is payment gateway transactions done through paypal?
+17) Is the carreer portal a seprate website created for Service Providers?
+    i.e if there are n no of Service providers than there will be n no of websites? 

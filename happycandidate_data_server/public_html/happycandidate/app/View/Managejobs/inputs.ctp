@@ -1,0 +1,1 @@
+<div class="index">	<div>				<iframe style="width:100%;height:1200px; border:none;" src="<?php echo $strJobListingUrl;?>" ></iframe>	</div></div>

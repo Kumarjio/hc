@@ -1,0 +1,32 @@
+Admin
+http://www.rothrsolutions.com/happycandidate/admins/
+u- admin@hc.com 
+p- rajendra
+
+Employer
+http://www.rothrsolutions.com/happycandidate/employers
+
+u- rajendrakumar.kandpal@gmail.com 
+p- rajendra
+
+Candidate
+
+http://www.rothrsolutions.com/happycandidate/portal/login/5
+u- raj20084u@gmail.com 
+p- rajendra
+
+Vendor
+
+Resume Review Login:
+
+http://www.rothrsolutions.com/happycandidate/vendoraccount
+
+u-  rajendra.kandpal@redorangetechnologies.com 
+p-  test123
+
+Other vendor login:
+
+u- rajendra4uaty@yahoo.com 
+p- test123
+
+

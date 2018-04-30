@@ -1,0 +1,1 @@
+[22-Apr-2014 12:06:12 Asia/Kolkata] PHP Fatal error:  Out of memory (allocated 2621440) (tried to allocate 4864 bytes) in /home/retech/public_html/happycandidate/jobberland/libs/class.cvsetting.php on line 502

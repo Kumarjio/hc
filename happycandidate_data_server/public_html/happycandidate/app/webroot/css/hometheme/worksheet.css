@@ -1,0 +1,68 @@
+
+.worksheet_subjective_entry_order_list {
+	list-style:decimal;
+}
+
+.worksheet_subjective_entry_order_list li{
+	margin-top:35px;
+}
+
+.worksheet_subjective_entry_order_list li div{
+	cursor:text;
+	margin-top:10px;
+}
+
+.worksheet_entry_order_list {
+	list-style:disc;
+	float:left;
+	width:100%;
+}
+
+.worksheet_entry_order_list li{
+	width:50%;
+	height:20px;
+	clear:both;	
+}
+.worksheet_entry_order_list li span{
+	width:100%;
+	display:block;
+}
+
+/*.worksheet_edit_elements {
+	border-bottom:none !important;
+	float:left !important;
+	width:auto !important;
+}*/
+
+.worksheet_entry_dash
+{
+	width:100%;
+	border-bottom:1px solid;
+	cursor:text;
+	display:block;
+}
+
+.worksheet_entry_dash:hover {
+	border-color: #e53120;
+	border-width:2px;
+}
+
+.worksheet_table {
+	width:70%;
+	margin-top:10px;
+	border-spacing:10px;
+	border-collapse:separate;
+}
+
+.worksheet_table td{
+	min-width:10px;
+}
+
+.worksheet_table th {
+	text-align:left;
+}
+
+.worksheet_note{
+	margin-top:10px;
+	margin-bottom:10px;
+}

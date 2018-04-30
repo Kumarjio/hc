@@ -1,0 +1,249 @@
+.dashboard-theme-icon{
+	}
+	
+.dashboard-theme-icon a{
+	display: block;
+	border: 1px solid #e1e1e1;
+	text-align: center;
+	color: #383d43 !important;
+	text-decoration: none;
+	border-radius: 3px;
+	padding: 28px 5px 3px;
+	min-height: 120px;
+	}
+	
+.dashboard-theme-icon a:hover, .dashboard-theme-icon .active-icon{
+	border: 1px solid #428bca;
+	text-align: center;
+	color: #428bca !important;
+	}
+	
+.dashboard-theme-icon .glyphicon{
+		font-size: 40px;
+	}
+	
+.dashboard-theme-icon span{
+	color: #383d43 !important;
+	display: block;
+	font-size: 14px;
+	}
+	
+.col-lg-2 {
+    padding-left: 15px;
+	padding-right:0px;
+}
+
+.theme-content-wrapper {
+	border: 1px solid #e1e1e1;
+	text-align: center;
+    padding: 20px 13px 5px;
+    position: relative;
+	border-radius: 3px;
+}
+
+.theme-content-section{
+	margin-top: 15px;
+	margin-bottom: 25px;
+	}
+
+.theme-content-section .col-lg-10 {
+    padding-right: 0;
+}
+
+.clear{
+	clear:both;
+	}
+	
+.theme-content-wrapper{
+	}
+	
+.theme-content-wrapper .col-lg-3{
+	padding: 0 6px;
+	margin-bottom: 14px;
+	}	
+	
+.theme-box{
+	border: 1px solid #e1e1e1;
+	border-radius: 3px;
+	}
+	
+.theme-box a{
+	border-top: 1px solid #e1e1e1;
+	color: #c2c2c2;
+	text-decoration: none !important;
+	display: block;
+	font-size: 14px;
+	padding: 5px 0;
+	}
+	
+.theme-title{
+	border-bottom: 1px solid #e1e1e1;
+	color: #383d43;
+	font-size: 14px;
+	padding: 6px 0;
+	}
+	
+.theme-img{
+	
+	}
+	
+.theme-img img{
+	width: 100%;
+	display: block;
+	}
+	
+.theme-box:hover{
+	border:1px solid #73a536;
+	}
+	
+.theme-box:hover a{
+	background:#428bca;
+	color:#ffffff;
+	}
+	
+.theme-box:hover .theme-title{
+	border-bottom:1px solid #73a536;
+	}
+	
+.selected-theme {
+	}
+	
+.selected-theme .theme-box{
+	border:1px solid #73a536;
+	}
+	
+.selected-theme .theme-title{
+	border-bottom:1px solid #73a536;
+	}
+	
+.selected-theme a{
+	background:#428bca;
+	color:#ffffff;
+	}
+	
+.search-content-section{
+	margin-top: 15px;
+	margin-bottom: 32px;	
+	}
+	
+	
+.search-content-wrapper {
+	border: 1px solid #e1e1e1;
+	text-align: center;
+    position: relative;
+	border-radius: 3px;
+    padding: 45px 25px;
+}
+
+.search-content-wrapper .search-input{
+	width: 72%;
+	background: #f9f9f9;
+	color: #c8c8c8;
+	font-size: 16px !important;
+	padding: 14px 20px !important;
+	line-height: normal;
+	height: auto !important;
+	float: left;
+	margin-right: 15px !important;
+	}
+	
+.search-content-wrapper .search-input-bt{
+	font-size: 17px !important;
+	font-weight: bold;
+	padding: 14px 10px !important;
+	height: auto;
+	line-height: normal;
+	}
+	
+.search-content-section .col-lg-10 {
+    padding-right: 0;
+}
+
+.search-content-output{
+	border: 1px solid #e1e1e1;
+    position: relative;
+	border-radius: 3px;
+    padding: 35px 0px 0;
+	}
+	
+.search-content-output h4{
+	font-weight: 300 !important;
+	font-size: 24px !important;
+	font-family: arial !important;
+	padding: 0 4% 15px;
+	}
+	
+.search-output-cols{
+	border-bottom: 1px solid #e1e1e1;
+	padding: 12px 4%;
+	text-decoration:
+	
+	}
+	
+.search-output-title{
+	color:#000;
+	display:inline-block;
+	font-size:18px;
+	width: 55%;
+	}
+	
+.search-output-price{
+	display: inline-block;
+	font-weight: normal;
+	width: 30%;
+	font-family: OpenSansBold, Georgia, serif !important;
+	text-align: right;
+	padding-right: 7%;
+	}
+	
+.search-output-price .old-price{
+	display: inline-block;
+	color: #000;
+	font-size: 16px;
+	text-decoration: line-through;
+	}
+	
+.search-output-price .new-price{
+	font-size: 24px;
+	color: #ff8915;
+	font-weight: normal;
+	display: inline-block;
+	}
+	
+.search-output-buy-now{
+	display: inline-block;
+	}
+	
+.buy-now{
+	text-transform: uppercase;
+	font-weight: bold !important;
+	}
+	
+	
+.bottom-border-none{
+	border-bottom:0;
+	}
+
+	
+	
+.theme-content-wrapper .col-lg-4{
+    padding: 0 6px;
+    margin-bottom: 14px;
+    }
+    
+.theme-design-wrap{
+    margin: 35px 0 0;
+    padding-bottom: 22px;
+    padding-top: 35px;
+    }
+    
+h1.theme-design-title{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    left: 19px;
+    margin: 0;
+    padding: 8px;
+    position: absolute;
+    text-align: left;
+    top: -21px;
+    }

@@ -1,0 +1,1067 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns="http://www.itpolecat.com/mmlsexport/" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.itpolecat.com/mmlsexport/" elementFormDefault="qualified">
+	<xsd:simpleType name="htmlString">
+		<xsd:annotation>
+			<xsd:documentation>
+        A string that has escaped html encoded within it.  For example:  &lt;i&gt;trap for the unwarry&lt;/i&gt;.
+        If the application is emitting the search results with xsl, the "disable-escape-processing" option of
+        value-of should be used.
+      </xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="digest">
+		<xsd:annotation>
+			<xsd:documentation>
+        A digest of a string.  Uses HmacMD5 or HmacSHA1.
+      </xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="assettype">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Identifies the type of asset.  _ss_book = a books24x7 book for example.  For aicc / scorm assets these are 
+      defined either in the upload servlet request or in the database update configuration file which defines where to look for assets.</html:p>
+				<html:p>Assettypes are used to support the "binned" search results.  This allows like assets to be grouped together in the search results.</html:p>
+				<html:p>The assettype is part of the asset id.  assettype + vendorid + nativeid must be unique in the database.</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="vendorid">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>String identifies the originator of the asset.  Examples: Books24x7, Skillsoft.
+        </html:p>
+				<html:p>the assettype + vendorid + nativeid should be unique within the database</html:p>
+				<html:p>For aicc courses this comes the course_creator parameter in the ".crs" file.</html:p>
+				<html:p>For scorm courses this comes from the <html:i>contribute</html:i> element flagged as "creator"</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="customerid">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>String identifies the originator of the asset.  Examples: Books24x7, Skillsoft.
+        </html:p>
+				<html:p>the assettype + vendorid + customerid + nativeid should be unique within the database</html:p>
+				<html:p>Identifies a customer of a particular vendor</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="nativeid">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>This is a string which identifies the asset.  It is the applications responsibility to
+        know how to launch a player for the asset given the nativeid, the vendorid  and the assettype.  
+        The assettype + the vendorid + the nativeid need to be unique within the database.
+        </html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="nativecourseid">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>This is a string which identifies the course.</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="assetid">
+		<xsd:annotation>
+			<xsd:documentation>Unique identifier for asset within mml database.  It is officially 
+        an opaque string.  The client should use the assettype and the nativeid for purposes of
+        identifying and launching the asset.  
+        </xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="assetlist">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>comma delimited string of all the nativeids in the bin.  this is used currently only by the books application</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="title">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>The assets title.  This is used for display in the search results and is favorably weighted by the search algorithm.</html:p>
+				<html:p>For aicc course level assets it comes from the <html:i>Course_Title</html:i> parameter in the <html:i>.crs</html:i> file.  For aicc lesson/topic level assets it comes from the <html:i>.des</html:i> entries.</html:p>
+				<html:p>For scorm it comes from the <html:i>title</html:i> element in the <html:i>general</html:i> section</html:p>
+				<html:p>Note that it may contain imbedded html marked up with escaped elements (&amp;lt;b&amp;&gt; for example &amp;lt;/b&gt;).  This means that when emitting with xsl, care should be taken to output with "disable-output-escaping='yes'"</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="htmlString"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="shortDescription">
+		<xsd:annotation>
+			<xsd:documentation>A brief description suitable for displaying in the search results.  By default it consists of the first couple sentences of the description.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="htmlString"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="description">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>The complete description of the asset.</html:p>
+				<html:p>For aicc assets this comes from the <html:i>Course_Description</html:i> found in the <html:i>.crs</html:i> file.  For aicc lesson/topic level assets it comes from the <html:i>.des</html:i> entries.</html:p>
+				<html:p>For scorm assets it comes from the <html:i>description</html:i> element</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="htmlString"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="binsetName">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Name of a defined set of asset bins</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:complexType name="assettypeArray">
+		<xsd:sequence>
+			<xsd:element name="assettype" type="assettype" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="entitlementKey">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Defines a set of assets in the mml database to be searched.</html:p>
+				<html:p>By convention, the entitlement key is constructed like a filepath (or XPATH query).   For example: "/samplecompany/allbooks".  The root of the "path" is the "companyid" that owns the entitlement.  In order to create or
+          modify an entitlement, a digest based on a secret key assigned to that company is generated.  The digest sent with the request must match the digest generated by the service for the entitlement definition to be performed.  
+          </html:p>
+				<html:p>No digests are needed for searching.
+          </html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="LaunchURL">
+		<xsd:annotation>
+			<xsd:documentation>Launch URL </xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="language">
+		<xsd:annotation>
+			<xsd:documentation>iso639-1 language (enUS)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:complexType name="languageArray">
+		<xsd:sequence>
+			<xsd:element name="language" type="language" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="binDefinition">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Provides the assettypes to be grouped into a "bin" in the search results</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="assettype" type="assettype" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>
+					<html:p>Descriptive name (such as "books") to identify the bin</html:p>
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="binnum" type="xsd:int">
+			<xsd:annotation>
+				<xsd:documentation>
+					<html:p>A number which defines the order in which the bins are to be returned.  It is one up, starting at 1 </html:p>
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="maxnesteditems" type="xsd:int">
+			<xsd:annotation>
+				<xsd:documentation>
+					<html:p>This limits the amount of detail returned for each asset in this bin in the result set.  
+          For instance, a 3 in the book bin would mean that each book returned would list the 3 most sections most relevant to the search query.
+          </html:p>
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="binningDefinition">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Defines how search results are to be organized.  
+        It allows groups of assets identified by assettype to be returned together in a "bin".  For example, there may be a course bin and a books bin.
+        </html:p>
+				<html:p>The bin definition is either supplied with each search or defined once and then identifed by name in the search.</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="name" type="binsetName" minOccurs="0"/>
+			<xsd:element name="binDefinition" type="binDefinition" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="contentUpload">
+		<xsd:restriction base="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>
+        This is as yet ill-defined.  Will probably be scorm or aicc metadata for loading into
+        the database.
+      </xsd:documentation>
+			</xsd:annotation>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="asset">
+		<xsd:annotation>
+			<xsd:documentation>An addressable item indexed in the MML Search database.  Examples
+      include not only books and courses but nested assets such as chapters within books or 
+      topics within courses.  In general the assets returned in the search results
+      are individually launchable by the application.
+      </xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="childcount" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>An optimization.  Lets the application know how many nested assets and of
+          what types we have.  Skillport wanted to know this,  they don't show parts in the search
+          results if there are now chapters maybe.
+          </xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="assettype" type="assettype"/>
+					<xsd:attribute name="count" type="xsd:int"/>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="assettype" type="assettype">
+				<xsd:annotation>
+					<xsd:documentation>identifies the type of asset.  _ss_book = a books24x7 book for example
+          </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="vendorid" type="vendorid" minOccurs="0"/>
+			<xsd:element name="launchURL" type="xsd:string" minOccurs="0"/>
+
+			<xsd:element name="customerid" type="customerid" minOccurs="0"/>
+			<xsd:element name="parentid" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>the nativeid of the owning asset (a book for example)
+          </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="nativeid" type="nativeid">
+				<xsd:annotation>
+					<xsd:documentation>This is a string which identifies the asset.  It is the applications responsibility to
+          know how to launch a player for the asset given the nativeid and the assettype.  The assettype + the nativeid need to be unique within the database.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="nativecourseid" type="nativecourseid" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>This is a string which identifies the course</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="assetid" type="assetid">
+				<xsd:annotation>
+					<xsd:documentation>Opaque string (don't let your eyes fool you into thinking it is assettype + ":" + nativeid) which uniquely identifies the asswet within the mml database</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="rank" type="xsd:int" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>A number which ranks this asset relative to other assets in a search.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="title" type="title">
+				<xsd:annotation>
+					<xsd:documentation>
+						<html:p>The assets title.  This is used for display in the search results and is favorably weighted by the search algorithm.</html:p>
+						<html:p>For aicc course level assets it comes from the <html:i>Course_Title</html:i> parameter in the <html:i>.crs</html:i> file.  For aicc lesson/topic level assets it comes from the <html:i>.des</html:i> entries.</html:p>
+						<html:p>For scorm it comes from the <html:i>title</html:i> element in the <html:i>general</html:i> section</html:p>
+						<html:p>Note that it may contain imbedded html marked up with escaped elements (&amp;lt;b&amp;&gt; for example &amp;lt;/b&gt;).  This means that when emitting with xsl, care should be taken to output with "disable-output-escaping='yes'"</html:p>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="lang" type="language" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="shortDescription" type="shortDescription" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>A brief description suitable for displaying in the search results.  By default it consists of the first couple sentences of the description.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="description" type="description" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						<html:p>The complete description of the asset.</html:p>
+						<html:p>For aicc assets this comes from the <html:i>Course_Description</html:i> found in the <html:i>.crs</html:i> file.  For aicc lesson/topic level assets it comes from the <html:i>.des</html:i> entries.</html:p>
+						<html:p>For scorm assets it comes from the <html:i>description</html:i> element</html:p>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="hascd" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only. a 1 (or yes) means the book has cd content.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="type" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only. Further identifies the type of book it is.  Current values are: 3 - executive summary, 0 / not present indicates a normal book</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="archived" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only. a 1 (or yes) means the book is old and obsolescent.  The influences the order in which the asset appears in search results.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="ISBN" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only. The book's ISBN
+              </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="OTHER" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="author" type="xsd:string" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="rights" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="date" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only. copyright date, yyyy</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="pages" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only.  Number of pages in the book.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="copyrightdate2" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation/>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="imprintname" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only. Name of the series of books.  For example, WROX is an imprintname for John Wiley &amp; Sons</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="publisher" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only. Name of the publisher</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:string">
+							<xsd:attribute name="id" type="xsd:int">
+								<xsd:annotation>
+									<xsd:documentation>The id is internal to books.  It identifies the publisher</xsd:documentation>
+								</xsd:annotation>
+							</xsd:attribute>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="coverimage" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only.  Provides the filename and dimensions of the book's coverimage.  The application must supply the base url.  For example:  "http://images.books24x7.com/coverimages/" where the complet url is "http://images.books24x7.com/coverimages/8463.gif"</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:string">
+							<xsd:attribute name="height" type="xsd:int"/>
+							<xsd:attribute name="width" type="xsd:int"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="contributor" type="xsd:string" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="nativelanguage" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Language of the book if other than English</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="archivedate" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation/>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="doi" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Digital Object Identifier</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="vendor" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation/>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="product" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation/>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="companionwebsite" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only.  The url to the companion website for the book.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="buybookurl" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only.  Url that leads to where to buy the book</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="publisherurl" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="bookdatepublished" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation/>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="edition" type="xsd:string" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="editor" type="xsd:string" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="seriesname" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation/>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="seriesid" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation/>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="listprice" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation/>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="mediatypestr" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation/>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="b24DatePublished" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only, date book was published by books24x7.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="extendedCopyright" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only. Extra copyright text for Executive Summaries.  This generally includes copyright informaiton about the book that is being summarized.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="synopsis" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Book assets only.  Unused at the moment.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="asset" type="asset" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Launchable assets nested within this one.  Examples are chapters (type _ss_chapter), or lessons within a business course (_ss_bs_lsn), etc.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="version" type="xsd:decimal">
+			<xsd:annotation>
+				<xsd:documentation/>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="type" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation/>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="assetid" type="assetid">
+			<xsd:annotation>
+				<xsd:documentation/>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="is_hit" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>yes means that the asset contains content that matched the search query.  If the asset is only there because one of its children matched, then the attribute will be omitted (or have a value of "no" I suppose)</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="rank" type="xsd:int">
+			<xsd:annotation>
+				<xsd:documentation/>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="hitcount" type="xsd:int">
+			<xsd:annotation>
+				<xsd:documentation/>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="videostreamid" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>id of the video stream that is searched</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="videobegin" type="xsd:time">
+			<xsd:annotation>
+				<xsd:documentation>duration of the video in HH:MM:ss.SSS</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="label" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>Label of a chapter or section.  Example: "Chapter 1", normally displayed before the title with a semi-colon tacked on.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="chunkid" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>id of the "chunk" of data for a book.  Used in conjunction with the bookid (found in the nativeid) to launch book content</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+    <xsd:attribute name="rootassetid" type="assetid">
+      <xsd:annotation>
+        <xsd:documentation>asset id of the root asset.  If this is  a topic, the root asset will be a course of some kind,  if it's a chapter, then it'll be a book</xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+		<xsd:attribute name="ai" type="xsd:int">
+			<xsd:annotation>
+				<xsd:documentation>ai attribute</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="bin">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Collection of assets of specified type (books, or courses) 
+      which were searched together and thus are ranked relative to each other.
+      Each bin can be looked as one set in a federated search.</html:p>
+				<html:p>In addition a bin represents a slice of the search as a whole.
+      This allows the application to work through the search set, only asking for 
+      how many assets it actually ones to display.  All the bins in a search will
+      start at the same number.  (Echoed in the start attribute on the SearchResult element).
+      </html:p>
+				<html:p>
+        If no assets were found in the bin or if the number of assets in the bin
+        was less than the specified <html:i>start</html:i> of SearchResult (see the start attribute),
+        the bin will be empty.
+      </html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="assetlist" type="assetlist" minOccurs="0"/>
+			<xsd:element name="asset" type="asset" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="binnum" type="xsd:int">
+			<xsd:annotation>
+				<xsd:documentation/>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="binname" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation/>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="count" type="xsd:int">
+			<xsd:annotation>
+        			<xsd:documentation>
+          <html:p>Number of toplevel assets (like books or courses) found by the search for the bin.   
+          </html:p>
+        			</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="more" type="xsd:int">
+			<xsd:annotation>
+        <xsd:documentation>
+          <html:p>Has a value of 1 if there are more assets after those included.  (binstart + binsize &lt; count)
+          </html:p>
+        </xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="maxnested" type="xsd:int">
+			<xsd:annotation>
+				<xsd:documentation/>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="entitlementDefinition">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Defines the assets to be included in an entitlement.  The assets are either identified specifically or via nested entitlement keys.</html:p>
+				<html:p>Entitlement definitions are specified with the EntitlementDefinition service</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="key" type="entitlementKey">
+				<xsd:annotation>
+					<xsd:documentation>
+						<html:p>Entitlement key being created / updated.</html:p>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="entitlements">
+				<xsd:complexType>
+					<xsd:choice maxOccurs="unbounded">
+						<xsd:element name="include">
+							<xsd:annotation>
+								<xsd:documentation>
+									<html:p>List of assetids or nested EntitlementKeys to be included.</html:p>
+								</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:choice maxOccurs="unbounded">
+									<xsd:element name="assetid" type="assetid"/>
+									<xsd:element name="key" type="entitlementKey"/>
+								</xsd:choice>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="exclude">
+							<xsd:annotation>
+								<xsd:documentation>
+									<html:p>List of assetids or nested EntitlementKeys to be excluded.</html:p>
+								</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:choice maxOccurs="unbounded">
+									<xsd:element name="assetid" type="assetid"/>
+									<xsd:element name="key" type="entitlementKey"/>
+								</xsd:choice>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:choice>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="query">
+		<xsd:annotation>
+			<xsd:documentation>Specifies a search to be performed against the mml search database.
+      </xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:choice minOccurs="0">
+				<xsd:element name="entitlement" type="entitlementKey">
+					<xsd:annotation>
+						<xsd:documentation>Specifies the set of assets within which to be searched.  Example: /Books24x7/itpro
+              </xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="entitlementDefinition" type="entitlementDefinition"/>
+			</xsd:choice>
+			<xsd:element name="language" type="language" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+              Restricts languages to be searched.  Format is rfc3066.  Language codes are 2 digit ISO 629-1.  If omitted the search is essentially performed in all the languages of the assets mapped by the entitlement.
+            </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:choice minOccurs="0">
+				<xsd:element name="bins" type="binningDefinition">
+					<xsd:annotation>
+						<xsd:documentation>
+							<html:p>Searched assets are arranged in bins.  This allows all the books to be grouped together, all the courses, all the testpreps, etc.</html:p>
+							<html:p>The definition for this binning is provided here</html:p>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="binsetName" type="binsetName"/>
+			</xsd:choice>
+			<xsd:element name="assets" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						<html:p>Allows certain assets to be excluded explicitly.</html:p>
+					</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:choice maxOccurs="unbounded">
+						<xsd:element name="include">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="assetid" type="assetid" maxOccurs="unbounded"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="exclude">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="assetid" type="assetid" maxOccurs="unbounded"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:choice>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="searchClause" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:string">
+							<xsd:attribute name="assetid" type="assetid"/>
+							<xsd:attribute name="field" type="xsd:string"/>
+							<xsd:attribute name="operator">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:enumeration value="like"/>
+										<xsd:enumeration value="before"/>
+										<xsd:enumeration value="after"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="matchscope">
+								<xsd:annotation>
+									<xsd:documentation>
+                  determines if the resulting assets must match(has) or not match(not) the specified categories. The valid values are has(default) and not.
+                    </xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:enumeration value="any"/>
+										<xsd:enumeration value="all"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="matchtype">
+								<xsd:annotation>
+									<xsd:documentation>
+                      determines how each individual category should be matched: any (asset must have any of the categories(the default))
+                    </xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:enumeration value="has"/>
+										<xsd:enumeration value="not"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="separator" type="xsd:string"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="sortorder" type="xsd:string"/>
+		<xsd:attribute name="fulltext">
+			<xsd:annotation>
+				<xsd:documentation>
+              Search fulltext or just metadata.
+          </xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="yes"/>
+					<xsd:enumeration value="no"/>
+					<xsd:enumeration value="true"/>
+					<xsd:enumeration value="false"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="cache">
+			<xsd:annotation>
+				<xsd:documentation>
+              Use the search cache.  Defaults to true.
+          </xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="yes"/>
+					<xsd:enumeration value="no"/>
+					<xsd:enumeration value="true"/>
+					<xsd:enumeration value="false"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="naturallanguage">
+			<xsd:annotation>
+				<xsd:documentation>
+              Uses native search engines (index server for example)'s natural language processing.  Defaults to false.
+          </xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="yes"/>
+					<xsd:enumeration value="no"/>
+					<xsd:enumeration value="true"/>
+					<xsd:enumeration value="false"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="language" type="language">
+			<xsd:annotation>
+				<xsd:documentation>
+            Restricts languages to be searched.  Format is rfc3066.  Language codes are 2 digit ISO 629-1.  If omitted the search is essentially performed in all the languages of the assets mapped by the entitlement.
+          </xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<!-- post xml toplevel elements -->
+	<xsd:element name="EntitlementBins" type="binningDefinition">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Supplied with EntitlementBins service.</html:p>
+				<html:p>Defines the default binning for the entitlement</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EntitlementDefinition" type="entitlementDefinition">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Supplied with EntitlementDefinition service.</html:p>
+				<html:p>Defines the default binning for the entitlement + assets/entitlements to included in this new entitlement</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Query" type="query">
+		<xsd:annotation>
+			<xsd:documentation>Specifies a search to be performed against the mml search database.
+      </xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="EntitlementInfo">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Provides information about an entitlement.  Specifically what
+        assettypes and languages are entitled.  For instance, if the entitlement includes books, then
+        '_ss_book' will be one of the assettypes and 'en' will be one of the languages.
+        </html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="key" type="entitlementKey"/>
+			<xsd:element name="mappedAssetTypes" type="assettypeArray">
+				<xsd:annotation>
+					<xsd:documentation>
+             union of the asset types of the mapped assets.  May be used by the to offer a drop down of the kinds of assets.  Examples are _ss_book, _ss_e3, etc.
+          </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="mappedLanguages" type="languageArray">
+				<xsd:annotation>
+					<xsd:documentation>
+             union of the languages of the mapped assets.  May be used by the to offer a drop down of the available languages.
+          </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!-- top level return elements -->
+	<xsd:element name="Error">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Contains an error reported by the webservices.  For example, trying to do a search without an entitlement key.</html:p>
+				<html:p>The code identifies the message.  The contents are a message in english.
+        </html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="description" type="xsd:string"/>
+				<xsd:element name="extendedDetail" type="xsd:string" minOccurs="0"/>
+			</xsd:sequence>
+			<xsd:attribute name="code" type="xsd:string"/>
+			<xsd:attribute name="servlet" type="xsd:string"/>
+			<xsd:attribute name="language" type="language"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Entitlement" type="EntitlementInfo">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Return from Entitlement service</html:p>
+				<html:p>Provides default entitlement key
+        for user, what assettypes its assets have, what languages its assets
+        have and what the default binning for the entitlement is.
+        </html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Asset" type="asset">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Return from AssetDetail service</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="QueryFieldList">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>Returned by QueryFieldList service.</html:p>
+				<html:p>Lists the "fields" available to be searched via the search service.</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="QueryField" maxOccurs="unbounded">
+					<xsd:annotation>
+						<xsd:documentation>
+							<html:p>Information about a searchable field</html:p>
+						</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="fieldName" type="xsd:string">
+								<xsd:annotation>
+									<xsd:documentation>
+										<html:p>name to be suppied in the field attribute of a query's searchClause</html:p>
+									</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="displayName" type="xsd:string">
+								<xsd:annotation>
+									<xsd:documentation>
+										<html:p>displayable name for field</html:p>
+									</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="description" type="xsd:string">
+								<xsd:annotation>
+									<xsd:documentation>
+										<html:p>description of contents of field</html:p>
+									</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="language" type="language">
+				<xsd:annotation>
+					<xsd:documentation>language of the list.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="SearchResults">
+		<xsd:annotation>
+			<xsd:documentation>
+				<html:p>The response to a search request OR a more search results request.
+          </html:p>
+				<html:p>The assets are arranged by bin as defined by the bin set definition provide
+          with the search.</html:p>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Query" type="query" minOccurs="0"/>
+				<xsd:element name="bin" type="bin" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+			<xsd:attribute name="entitlement" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>entitlement key used for the search</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="skillportimageurl" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>URL prefix to be used in getting the skillport icons.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="bookscoverimageurl" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>
+URL prefix to be used in getting the books cover images.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="assetcount" type="xsd:int">
+				<xsd:annotation>
+					<xsd:documentation>how many top level assets of all types were matched by the search.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="start" type="xsd:int">
+				<xsd:annotation>
+					<xsd:documentation>The relative position of each first asset within its bin.  The application asked for assets starting at 10 for example.  0 based.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="binsize" type="xsd:int">
+				<xsd:annotation>
+					<xsd:documentation>How many will be delived in each bin.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="isbinned" type="xsd:boolean">
+				<xsd:annotation>
+					<xsd:documentation/>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="version" type="xsd:decimal">
+				<xsd:annotation>
+					<xsd:documentation/>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="searchwords" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>The words used in the search.  May be used for highlighting purposes.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="searchid" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>Deprecated search identifier.  The query xml string as a whole takes its place</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="language" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>Language specified by query</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="BinsetDefinition" type="binningDefinition">
+		<xsd:annotation>
+			<xsd:documentation>
+      </xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ContentUploadResponse">
+		<xsd:annotation>
+			<xsd:documentation>
+        The response to a content upload webservice post.  It lists the assets successfully loaded, those
+        and those that have errors.
+      </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="assetsloaded" minOccurs="0">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="asset" type="asset" minOccurs="0" maxOccurs="unbounded"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="assetsfailed" minOccurs="0">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="asset" minOccurs="0" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="assetid" type="assetid"/>
+										<xsd:element name="errordetail" type="xsd:string"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="assetsprocessed" type="xsd:int">
+				<xsd:annotation>
+					<xsd:documentation>how many assets were processed (including those with errors)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="assetsuploaded" type="xsd:int">
+				<xsd:annotation>
+					<xsd:documentation>how many assets were successfully loaded</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

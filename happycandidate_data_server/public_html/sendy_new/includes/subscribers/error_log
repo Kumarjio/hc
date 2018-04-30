@@ -1,0 +1,232 @@
+[30-Jun-2017 09:45:39 America/New_York] PHP Notice:  Undefined variable: data in /home/rothrres/public_html/sendy_new/includes/subscribers/export-csv.php on line 105
+[01-Jul-2017 06:11:49 America/New_York] PHP Notice:  Undefined variable: all_lists in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 58
+[01-Jul-2017 06:11:49 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 62
+[01-Jul-2017 06:11:49 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 68
+[01-Jul-2017 06:11:49 America/New_York] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 42
+[01-Jul-2017 06:14:20 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 79
+[01-Jul-2017 06:14:20 America/New_York] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 52
+[01-Jul-2017 06:34:18 America/New_York] PHP Notice:  Undefined index: app in /home/rothrres/public_html/sendy_new/includes/subscribers/line-update.php on line 8
+[01-Jul-2017 06:34:18 America/New_York] PHP Notice:  Undefined index: list_id in /home/rothrres/public_html/sendy_new/includes/subscribers/line-update.php on line 9
+[01-Jul-2017 06:34:18 America/New_York] PHP Notice:  Undefined index: line in /home/rothrres/public_html/sendy_new/includes/subscribers/line-update.php on line 10
+[01-Jul-2017 06:35:08 America/New_York] PHP Notice:  Undefined variable: combine_arr in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 51
+[01-Jul-2017 06:35:08 America/New_York] PHP Warning:  implode(): Invalid arguments passed in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 51
+[01-Jul-2017 06:35:13 America/New_York] PHP Notice:  Undefined index: list_name in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 8
+[01-Jul-2017 06:35:13 America/New_York] PHP Notice:  Undefined index: app in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 9
+[01-Jul-2017 06:35:13 America/New_York] PHP Notice:  Undefined index: user_type in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 10
+[01-Jul-2017 06:35:13 America/New_York] PHP Notice:  Undefined index: portal_list in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 11
+[01-Jul-2017 06:35:13 America/New_York] PHP Notice:  Undefined index: subscribe_type in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 12
+[01-Jul-2017 06:35:13 America/New_York] PHP Notice:  Undefined variable: combine_arr in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 51
+[01-Jul-2017 06:35:13 America/New_York] PHP Warning:  implode(): Invalid arguments passed in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 51
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:39:52 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: employer_user_fname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: employer_user_lname in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 45
+[01-Jul-2017 06:40:26 America/New_York] PHP Notice:  Undefined index: email in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 46
+[01-Jul-2017 06:48:24 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 09:09:08 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 09:09:27 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 09:10:30 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 09:10:43 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 09:31:21 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 09:31:36 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 09:32:08 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 09:32:19 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 09:55:48 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 09:57:38 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 09:57:42 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 10:01:11 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 10:04:18 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 10:24:31 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 10:25:35 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 10:44:09 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 10:47:58 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 10:48:14 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 10:49:03 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[04-Jul-2017 10:49:21 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 77
+[06-Jul-2017 05:37:14 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 81
+[06-Jul-2017 08:50:50 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 98
+[07-Jul-2017 03:13:43 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 124
+[10-Jul-2017 09:07:06 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 129
+[11-Jul-2017 02:54:33 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 129
+[17-Jul-2017 06:08:50 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:09:36 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:10:05 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:11:34 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:12:45 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:13:36 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:14:05 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:14:45 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:15:30 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:16:25 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:16:58 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:17:22 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:21:14 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:21:38 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:22:05 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:22:29 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:22:53 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:23:52 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:24:33 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:24:56 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:26:23 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:26:42 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:27:03 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:27:23 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:27:45 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:28:55 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:35:38 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175
+[17-Jul-2017 06:36:55 America/New_York] PHP Notice:  Uninitialized string offset: 0 in /home/rothrres/public_html/sendy_new/includes/subscribers/import-add.php on line 175

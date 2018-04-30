@@ -1,0 +1,62 @@
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  
+  #page-header {
+	display:none;
+  }
+  .noprint {
+	display:none;
+  }
+  
+  #analytic_filter {
+	display:none;
+  }
+
+  #menu{
+	display:none;
+  }
+  .actions {
+	display:none;
+  }
+  div.index {
+	margin-left:0px;
+  }
+  
+  #analyticsfilter {
+	display:none !important;
+  }
+  
+  .index #page-title {
+	display:none !important;
+  }
+  
+  #top-nav{
+	display:none;
+  }
+  
+   .main-nav-panel{
+	display:none;
+  }
+  
+  #header-candy{
+	display:none;
+  }
+  
+  .worksheet_note {
+	display:none;
+  }
+  
+  #footer {
+	display:none;
+  }
+  
+  #operation_container {
+	display:none;
+  }
+  
+  .copyright {
+	display:none;
+  }
+}

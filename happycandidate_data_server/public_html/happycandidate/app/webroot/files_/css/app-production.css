@@ -1,0 +1,137 @@
+.dropdown-menu{
+display:none;
+}
+.dropdown a{
+text-decoration:none;
+}
+.dropdown a:hover{
+background:#2D2D2D;
+}
+.dropdown-menu a:hover{
+background:#E7E7E7;
+}
+.user-ico{
+outline:none;
+
+}
+.open .dropdown-menu{
+display:block;
+background: none repeat scroll 0 0 #FFFFFF;
+
+float: left;
+left: 0;
+list-style: none outside none;
+margin: 5px 0 0;
+min-width: 150px;
+padding: 5px;
+position: absolute;
+text-align: left;
+top: 105%;
+z-index: 1050;
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+ -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+   padding: 5px 0;
+
+
+}
+.open .dropdown-menu li a {text-decoration:none;}
+.open .dropdown-menu li a{
+font-size: 13px;
+line-height: 1.6em;
+text-transform: none;
+clear: both;
+cursor: pointer;
+display: block;
+font-weight: 400;
+line-height: 20px;
+margin: 0;
+padding: 5px 15px;
+position: relative;
+white-space: nowrap;
+font-size: 13px;
+ color: #888888;
+
+}
+.dropdown > .dropdown-menu:after{
+ border-bottom: 6px solid #FFFFFF;
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    border-right: 6px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: 8px;
+    position: absolute;
+    top: -6px;
+}
+.dropdown > .dropdown-menu:before{
+ border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+    border-left: 7px solid rgba(0, 0, 0, 0);
+    border-right: 7px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: 7px;
+    position: absolute;
+    top: -7px;
+}
+.open>.dropdown-menu,.dropdown-submenu:hover>.dropdown-menu{-webkit-animation-name:fadeInDown;-moz-animation-name:fadeInDown;-o-animation-name:fadeInDown;animation-name:fadeInDown}
+
+.open > .dropdown-menu, .dropdown-submenu:hover > .dropdown-menu {
+    animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animated.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	-moz-animation-name: fadeInDown;
+	-o-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}

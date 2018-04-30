@@ -1,0 +1,199 @@
+[03-Jul-2017 03:51:35 America/New_York] PHP Notice:  Undefined variable: userID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 126
+[03-Jul-2017 03:51:35 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 128
+[03-Jul-2017 03:51:35 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 164
+[03-Jul-2017 03:51:35 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 179
+[03-Jul-2017 04:01:51 America/New_York] PHP Notice:  Undefined variable: userID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 124
+[03-Jul-2017 04:01:51 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 127
+[03-Jul-2017 04:01:51 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 179
+[03-Jul-2017 04:02:46 America/New_York] PHP Notice:  Undefined variable: userID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 124
+[03-Jul-2017 04:02:46 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 127
+[03-Jul-2017 04:02:46 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 179
+[03-Jul-2017 04:03:09 America/New_York] PHP Notice:  Undefined variable: userID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 124
+[03-Jul-2017 04:03:09 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 127
+[03-Jul-2017 04:03:09 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 179
+[03-Jul-2017 04:03:51 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 153
+[03-Jul-2017 04:04:27 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 153
+[03-Jul-2017 04:04:33 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 153
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: id in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 9
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: list in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 10
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: list_name in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 11
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: user_type in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 14
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: portal_list in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 15
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: subscribe_type in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 16
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: opt_in in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 19
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: subscribed_url in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 20
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: confirm_url in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 21
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: thankyou_subject in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 23
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: thankyou_message in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 24
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: unsubscribe_all_list in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 32
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: unsubscribed_url in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 33
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: goodbye_subject in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 35
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: goodbye_message in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 36
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: confirmation_subject in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 39
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined index: confirmation_email in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 40
+[03-Jul-2017 04:05:17 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 112
+[03-Jul-2017 05:16:46 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 153
+[03-Jul-2017 05:21:18 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 153
+[03-Jul-2017 05:22:33 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 154
+[03-Jul-2017 05:22:36 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 154
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: id in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 9
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: list in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 10
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: list_name in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 11
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: user_type in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 14
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: portal_list in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 15
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: subscribe_type in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 16
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: opt_in in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 19
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: subscribed_url in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 20
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: confirm_url in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 21
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: thankyou_subject in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 23
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: thankyou_message in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 24
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: unsubscribe_all_list in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 32
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: unsubscribed_url in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 33
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: goodbye_subject in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 35
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: goodbye_message in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 36
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: confirmation_subject in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 39
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined index: confirmation_email in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 40
+[03-Jul-2017 05:25:06 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 112
+[03-Jul-2017 05:28:47 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 147
+[03-Jul-2017 05:29:14 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 147
+[03-Jul-2017 05:31:19 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 125
+[03-Jul-2017 05:31:19 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 128
+[03-Jul-2017 05:31:19 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 132
+[03-Jul-2017 05:31:19 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 147
+[03-Jul-2017 05:34:23 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 129
+[03-Jul-2017 05:34:26 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 129
+[03-Jul-2017 05:34:59 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 129
+[03-Jul-2017 05:35:02 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 129
+[03-Jul-2017 05:38:58 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 129
+[03-Jul-2017 05:39:02 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 129
+[03-Jul-2017 05:39:19 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 129
+[03-Jul-2017 05:39:22 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 129
+[03-Jul-2017 05:40:01 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 130
+[03-Jul-2017 05:40:32 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 130
+[03-Jul-2017 05:40:36 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 130
+[03-Jul-2017 05:42:05 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:42:08 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:43:00 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 132
+[03-Jul-2017 05:43:36 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 132
+[03-Jul-2017 05:46:38 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 132
+[03-Jul-2017 05:47:47 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 132
+[03-Jul-2017 05:48:15 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 131
+[03-Jul-2017 05:48:19 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 131
+[03-Jul-2017 05:49:08 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 131
+[03-Jul-2017 05:49:10 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 131
+[03-Jul-2017 05:49:34 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:49:34 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:49:34 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:49:34 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:49:34 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:49:37 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:49:37 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:49:37 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:49:37 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:49:37 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:50:17 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:50:17 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:50:17 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:50:17 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:50:17 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 133
+[03-Jul-2017 05:53:16 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 135
+[03-Jul-2017 05:53:16 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 135
+[03-Jul-2017 05:53:16 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 135
+[03-Jul-2017 05:53:16 America/New_York] PHP Notice:  Undefined variable: validator in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 135
+[03-Jul-2017 05:55:44 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 150
+[03-Jul-2017 05:57:04 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 153
+[03-Jul-2017 05:57:08 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 153
+[03-Jul-2017 05:57:55 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 153
+[03-Jul-2017 05:58:32 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 154
+[03-Jul-2017 05:58:54 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 154
+[03-Jul-2017 05:58:57 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 154
+[03-Jul-2017 05:59:21 America/New_York] PHP Fatal error:  Class 'EmailAddressValidator' not found in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 154
+[03-Jul-2017 06:01:18 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:18 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:18 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:18 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:18 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:18 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:18 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:18 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:18 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:18 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:21 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:21 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:21 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:21 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:21 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:21 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:21 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:21 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:21 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:01:21 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:30 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:30 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:30 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:30 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:30 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:30 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:30 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:30 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:30 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:30 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:40 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:40 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:40 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:40 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:40 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:40 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:40 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:40 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:40 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:40 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:50 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:50 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:50 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:50 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:50 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:50 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:50 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:50 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:50 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:02:50 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:05:15 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:05:15 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:05:15 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:05:15 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:05:15 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:05:15 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:05:15 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:05:15 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:05:15 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:05:15 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:07:46 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:07:46 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:07:46 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:07:46 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:07:46 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:07:46 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:07:46 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:07:46 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:07:46 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:07:46 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 156
+[03-Jul-2017 06:09:45 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:09:45 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:09:45 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:09:45 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:09:45 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:09:45 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:09:45 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:09:45 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:09:45 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:09:45 America/New_York] PHP Notice:  Undefined variable: time in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:10:27 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:10:27 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:10:27 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:10:27 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[03-Jul-2017 06:10:27 America/New_York] PHP Notice:  Undefined variable: listID in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 157
+[04-Jul-2017 10:50:39 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 117
+[04-Jul-2017 10:51:11 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 117
+[06-Jul-2017 05:30:29 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 117
+[06-Jul-2017 07:46:17 America/New_York] PHP Notice:  Undefined variable: line_array in /home/rothrres/public_html/sendy_new/includes/list/edit.php on line 132
