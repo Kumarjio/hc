@@ -1,0 +1,20 @@
+/*
+ Theme Name:   Alvida Child Theme
+ Theme URI:    http://themesvila.com/themes-wp/alvida/
+ Description:  This is Alvida Child Theme
+ Author:       Masum Billah
+ Author URI:   http://getmasum.net
+ Template:     alvida
+ Version:      1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:  two-columns, right-sidebar
+ Text Domain:  alvida-child
+*/
+
+@import '../alvida/style.css';
+
+body{
+	
+	overflow-x: hidden;
+}

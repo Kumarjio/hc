@@ -90,6 +90,7 @@ class HomeController extends AppController {
             //To get Emplyer detail code end
 
 //            if ($this->params['action'] == "home") {
+            echo $arrPortalThemeDetail['Wiztheme']['theme_name'];
                 $this->layout = $arrPortalThemeDetail['Wiztheme']['theme_name'] . '-' . $arrPortalThemeDetail['Wiztheme']['theme_color'] . '-FRONTEND';
 //            }
 //            if ($this->params['action'] == "themepage") {
